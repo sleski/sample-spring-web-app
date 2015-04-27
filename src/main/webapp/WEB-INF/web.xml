@@ -18,7 +18,11 @@
 
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/simple-dispatcher-servlet.xml</param-value>
+		<param-value>
+			/WEB-INF/simple-dispatcher-servlet.xml
+			/WEB-INF/beans.xml
+		</param-value>
+		
 	</context-param>
 
 	<listener>
