@@ -12,9 +12,15 @@
 
   <context:component-scan base-package="it.tostao.sswa.controller" />
 
-  <jdbc:embedded-database id="dataSource" type="H2" />
 
   <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" c:dataSource-ref="dataSource" />
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.hsqldb.jdbcDriver" />
+        <property name="url" value="jdbc:hsqldb:mem:springtestdbunit" />
+        <property name="username" value="sa" />
+        <property name="password" value="" />
+    </bean>
 
   <!--<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
     <property name="driverClassName" value="org.hsqldb.jdbcDriver" />
