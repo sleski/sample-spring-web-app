@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataset>
-	<Car brand="BMW" model="E91" year="2006" doorsNumber="5" plate="MSL5111" />
-	<Car brand="Hyundai" model="Accent" year="2000" doorsNumber="4" plate="ERA38N3" />
+	<car brand="BMW" model="E91" year="2006" doorsNumber="5" plate="MSL5111" />
+	<car brand="Hyundai" model="Accent" year="2000" doorsNumber="4" plate="ERA38N3" />
 </dataset>
