@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" c:dataSource-ref="dataSource"/>
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.hsqldb.jdbcDriver"/>
+        <property name="url" value="jdbc:hsqldb:mem:springtestdbunit"/>
+        <property name="username" value="sa"/>
+        <property name="password" value=""/>
+    </bean>
+
+    <!--
+    <bean class="de.gjem.oskar.service.SearchServiceSolr" />
+
+    <bean class="de.gjem.oskar.service.NewsServiceMysql" />
+
+    <bean class="de.gjem.oskar.service.MediaImageServerService" />
+
+    <bean id="mlEventInfoFetcher" class="de.gjem.oskar.mysql.MedialineEventInfoFetcher" />
+    <bean id="mlFilmInfoFetcher" class="de.gjem.oskar.mysql.MedialineFilmInfoFetcher" />
+    <bean id="mlGameInfoFetcher" class="de.gjem.oskar.mysql.MedialineGameInfoFetcher" />
+    <bean id="mlSoundCarrierInfoFetcher" class="de.gjem.oskar.mysql.MedialineSoundCarrierInfoFetcher" />
+    <bean id="mlSarInfoFetcher" class="de.gjem.oskar.mysql.MedialineStarInfoFetcher" />
+    <bean id="mlVideoInfoFetcher" class="de.gjem.oskar.mysql.MedialineVideoInfoFetcher" />
+
+     -->
+
+</beans>

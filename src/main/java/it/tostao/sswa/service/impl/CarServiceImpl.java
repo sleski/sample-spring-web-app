@@ -19,6 +19,22 @@ public class CarServiceImpl implements CarService {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
+    /**
+     * Default constructor.
+     */
+    public CarServiceImpl(){
+
+    }
+
+    /**
+     * Constructor with param.
+     *
+     * @param jdbcTemplate
+     */
+    public CarServiceImpl(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
+
     @Override
     public int sizeInGarage() {
         String query = "SELECT count(*) FROM car";
