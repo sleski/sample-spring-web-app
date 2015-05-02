@@ -13,20 +13,4 @@
         <property name="password" value=""/>
     </bean>
 
-    <!--
-    <bean class="de.gjem.oskar.service.SearchServiceSolr" />
-
-    <bean class="de.gjem.oskar.service.NewsServiceMysql" />
-
-    <bean class="de.gjem.oskar.service.MediaImageServerService" />
-
-    <bean id="mlEventInfoFetcher" class="de.gjem.oskar.mysql.MedialineEventInfoFetcher" />
-    <bean id="mlFilmInfoFetcher" class="de.gjem.oskar.mysql.MedialineFilmInfoFetcher" />
-    <bean id="mlGameInfoFetcher" class="de.gjem.oskar.mysql.MedialineGameInfoFetcher" />
-    <bean id="mlSoundCarrierInfoFetcher" class="de.gjem.oskar.mysql.MedialineSoundCarrierInfoFetcher" />
-    <bean id="mlSarInfoFetcher" class="de.gjem.oskar.mysql.MedialineStarInfoFetcher" />
-    <bean id="mlVideoInfoFetcher" class="de.gjem.oskar.mysql.MedialineVideoInfoFetcher" />
-
-     -->
-
 </beans>

@@ -2,7 +2,9 @@ package it.tostao.sswa.service;
 
 import com.github.springtestdbunit.DbUnitTestExecutionListener;
 import com.github.springtestdbunit.annotation.DatabaseSetup;
+import it.tostao.sswa.model.Car;
 import it.tostao.sswa.service.impl.CarServiceImpl;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -39,10 +41,11 @@ public class CarServiceImplTest {
      * Test cars counter.
      */
     @Test
-    @DatabaseSetup("sampleData.xml")
+    @DatabaseSetup("sampleCars.xml")
     public void checkCounter() {
-        int nbOfCarsInGarage = carService.sizeInGarage();
-        LOG.info("No of cars = " + nbOfCarsInGarage);
-
+//        int nbOfCarsInGarage = carService.sizeInGarage();
+//        LOG.info("No of cars = " + nbOfCarsInGarage);
+        Car findenCar = carService.findByPlate("MSL5111");
+        Assert.assertNotNull(findenCar);
     }
 }
