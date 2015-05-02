@@ -21,10 +21,6 @@ public class Index {
 	public ModelAndView get(){
 		LOG.info("Index#get() called");
 		ModelAndView mav = new ModelAndView("index");
-		Long l = Long.parseLong("1");
-		if( null == l){
-			LOG.error("We have a big problem!");
-		}
 		return mav;
 	}
 }
