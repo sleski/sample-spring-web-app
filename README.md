@@ -1,13 +1,16 @@
 # sample-spring-web-app
 Sample spring web app (java8, spring 4, etc.)
 
-Done:
+# Done:
 
 -HSQLDB works in test mode
+
 -dBUnit works properly
+
 -simple spring mvc controller 
 
-TODO:
+# TODO:
 
 -integration test
+
 -other ideas
