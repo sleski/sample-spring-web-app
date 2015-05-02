@@ -40,7 +40,7 @@ public class CarServiceImplTest {
      * Test cars counter.
      */
     @Test
-    @DatabaseSetup("/it/tostao/sswa/cars.xml")
+    @DatabaseSetup("cars.xml")
     public void checkCounter() {
         int nbOfCarsInGarage = carService.sizeInGarage();
         LOG.info("No of cars = " + nbOfCarsInGarage);
