@@ -8,7 +8,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -19,21 +18,15 @@ public class CarServiceImpl implements CarService {
     Logger LOG = LoggerFactory.getLogger(CarServiceImpl.class);
 
     private final String CAR_FIELDS = "brand, model, year, doorsNumber, plate";
-    @Autowired
+
     private JdbcTemplate jdbcTemplate;
-
-    /**
-     * Default constructor.
-     */
-    public CarServiceImpl() {
-
-    }
 
     /**
      * Constructor with param.
      *
      * @param jdbcTemplate
      */
+    @Autowired
     public CarServiceImpl(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
